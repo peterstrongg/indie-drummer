@@ -8,18 +8,21 @@
 
 #include "PluginProcessor.h"
 #include "PluginEditor.h"
+#include "KnobControl.h"
 
 //==============================================================================
 DrumMachineAudioProcessorEditor::DrumMachineAudioProcessorEditor (DrumMachineAudioProcessor& p)
-    : AudioProcessorEditor (&p), audioProcessor (p)
+    : AudioProcessorEditor (&p), audioProcessor (p),
+	tempoKnob(audioProcessor.apvts, "TEMPO", "Tempo")
 {
-    // Make sure that before the constructor has finished, you've set the
-    // editor's size to whatever you need it to be.
+	addAndMakeVisible(tempoKnob);
+
     setSize (400, 300);
 }
 
 DrumMachineAudioProcessorEditor::~DrumMachineAudioProcessorEditor()
 {
+
 }
 
 //==============================================================================
@@ -35,6 +38,5 @@ void DrumMachineAudioProcessorEditor::paint (juce::Graphics& g)
 
 void DrumMachineAudioProcessorEditor::resized()
 {
-    // This is generally where you'll want to lay out the positions of any
-    // subcomponents in your editor..
+	tempoKnob.setBounds(150, 50, 120, 120);
 }

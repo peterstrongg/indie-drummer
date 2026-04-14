@@ -4,6 +4,8 @@
               addUsingNamespaceToJuceHeader="0" jucerFormatVersion="1">
   <MAINGROUP id="gbD7QU" name="DrumMachine">
     <GROUP id="{36C7358D-4511-A3F8-04C4-A9ED0495DF5F}" name="Source">
+      <FILE id="nUrfcn" name="KnobControl.h" compile="0" resource="0" file="Source/KnobControl.h"/>
+      <FILE id="PWK1UL" name="KnobControl.cpp" compile="1" resource="0" file="Source/KnobControl.cpp"/>
       <FILE id="amWwrm" name="Patterns.h" compile="0" resource="0" file="Source/Patterns.h"/>
       <FILE id="JOol4A" name="Colors.h" compile="0" resource="0" file="Source/Colors.h"/>
       <FILE id="JpWTuR" name="RotaryDialLookAndFeel.h" compile="0" resource="0"

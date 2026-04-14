@@ -193,6 +193,7 @@ juce::AudioProcessorValueTreeState::ParameterLayout DrumMachineAudioProcessor::c
     // Global Settings
     params.push_back(std::make_unique<juce::AudioParameterBool>("SYNC", "Sync", true));
     params.push_back(std::make_unique<juce::AudioParameterFloat>("TEMPO", "Tempo", 20.0f, 240.0f, 120.0f));
+    params.push_back(std::make_unique<juce::AudioParameterFloat>("TEST", "Test", 20.0f, 240.0f, 120.0f));
 
 	// Rhythm Settings
     params.push_back(std::make_unique<juce::AudioParameterChoice>("PATTERN", "pattern", Patterns::names, 0));
